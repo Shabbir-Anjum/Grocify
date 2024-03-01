@@ -5,6 +5,6 @@
     body{
         background-image: url('../public/images/Image.png');
       
-        @apply bg-cover bg-no-repeat text-white h-screen
+        @apply bg-cover bg-no-repeat text-white
     }
 }
