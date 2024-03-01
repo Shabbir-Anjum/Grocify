@@ -1,8 +1,32 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [],
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
   theme: {
-    extend: {},
+    screens:{
+      sm: '480px',
+      md: '768px',
+      lg: '1024px'
+    },
+    extend: {
+      colors:{
+        pcolor: '#010a5e',
+      }
+    },
+    keyframes:{
+      move:{
+      '100%': {transform: 'translateY(1rem)'}
+      }
+    },
+    container:{
+      center: true,
+      padding:{
+        DEFAULT: '1rem',
+        sm: '1.5rem'
+      }
+    }
   },
   plugins: [],
 }
